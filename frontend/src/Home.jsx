@@ -6,7 +6,7 @@ export default function Home() {
   const token = localStorage.getItem("token")
 
   useEffect(() => {
-    fetch("http://localhost:5000/posts")
+    fetch("https://social-media-3uzk.onrender.com:5000/posts")
       .then(res => res.json())
       .then(setPosts)
   }, [])

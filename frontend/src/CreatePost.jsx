@@ -9,7 +9,7 @@ export default function CreatePost({ onPost }) {
     e.preventDefault()
     if (words > 40) return
 
-    const res = await fetch("http://localhost:5000/posts", {
+    const res = await fetch("https://social-media-3uzk.onrender.com:5000/posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
